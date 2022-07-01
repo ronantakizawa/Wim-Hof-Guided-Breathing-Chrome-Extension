@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "WimHofBreathingGuide",
+  "description": "WimHofBreathingGuide",
+  "version": "1",
+  "author": "Ronan Takizawa",
+  "browser_action": {
+    "default_title": "WimHofBreathingGuide",
+	"default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab"
+	]
+}

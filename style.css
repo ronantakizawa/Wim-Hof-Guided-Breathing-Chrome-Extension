@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #224941 url('img/depositphotos_257311602-stock-photo-black-and-turquoise-grunge-watercolor.jpg') no-repeat center center/cover;
+  color: #bd5b00;
+  width:530px;
+  height:530px;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 50px;
+}
+h1{
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+#number
+{
+  display:grid;
+  place-items: center;
+  position:relative;
+  left:5px;
+  top:45px;
+  opacity: 1;
+  transition: 1s opacity;
+
+}
+#text
+{
+  font-size: 20px;
+  text-align: center;
+  position:relative;
+  bottom:100px;
+  opacity: 1;
+  transition: 1s opacity;
+
+}
+
+.container {
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  transform: scale(1.4);
+}
+
+.circle {
+  background:radial-gradient(rgb(255, 217, 0), #ff9100);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left:5px;
+  z-index: -1;
+  transition: 1s opacity;
+}
+
+
+.hover:hover{
+  background:radial-gradient(#fcd600,#cf6620);
+}
+
+
+.container.grow {
+  animation: grow 3s linear forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.7);
+  }
+
+  to {
+    transform: scale(1.4);
+  }
+}
+
+.container.shrink {
+  animation: shrink 4.8s linear forwards;
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.4);
+  }
+
+  to {
+    transform: scale(0.65);
+  }
+}
+
+.container.shrink2 {
+  animation: shrink 59s linear forwards;
+}
+
+@keyframes shrink2 {
+  from {
+    transform: scale(1.4);
+  }
+
+  to {
+    transform: scale(0.65);
+  }
+}
+
+.container.shrink3 {
+  animation: shrink 8s linear forwards;
+}
+
+@keyframes shrink3 {
+  from {
+    transform: scale(1.4);
+  }
+
+  to {
+    transform: scale(0.1);
+  }
+}
+
